@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+       <property>
+          <name>hbase.rootdir</name>
+          <value>hdfs://ns1/hbase</value>
+      </property>
+      <property>
+          <name>hbase.cluster.distributed</name>
+          <value>true</value>
+      </property>
+      <property>
+          <name>hbase.zookeeper.quorum</name>
+          <value>bigdata01,bigdata02,bigdata03</value>
+      </property> 
+      <property>
+          <name>hbase.regionserver.wal.codec</name>
+          <value>org.apache.hadoop.hbase.regionserver.wal.IndexedWALEditCodec</value>
+      </property> 
+</configuration>
